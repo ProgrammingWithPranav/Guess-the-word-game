@@ -9,11 +9,12 @@
     
         <link rel="stylesheet" type="text/css" href="game.css">
     
-        <script src="main.js"></script>
+        <script src="game.js"></script>
     </head>
-    <body>
-        <h3 id="player1Name"></h3>:&nbsp;<span id="player1score"></span>
-        <h3 id="player2Name"></h3>:&nbsp;<span id="player2score"></span>
+    <body onload="onLoad()">
+        <h4 id="player1Name" style="display: inline-block;"></h4><span id="player1score"></span>
+        <br>
+        <h4 id="player2Name" style="display: inline-block;"></h4><span id="player2score"></span>
 
         <div class="container">
             <center>
@@ -30,7 +31,7 @@
                 <br>
                 <input type="text" class="form-control" id="questionInput" placeholder="Word...">
                 <br>
-                <button style="width: 30%" class="btn btn-success" id="send">Send</button>
+                <button onclick="send()" style="width: 30%" class="btn btn-success" id="send">Send</button>
             </center>
         </div>
     </body>
